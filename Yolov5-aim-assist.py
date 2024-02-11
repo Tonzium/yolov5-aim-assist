@@ -21,6 +21,8 @@ model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
 screenshot_number = 0
 pyautogui.PAUSE = 0.01
 
+save_image_path = f'C:\\Users\\Toni\yolov5\\data\\images\\screenshot_{screenshot_number}.png'
+
 while True:
 
     # Mouse automation
@@ -74,7 +76,7 @@ while True:
 
         ###### SAVING SCREENSHOT#####
         # Generate a filename and check if it already exists
-        while os.path.exists(f'C:\\Users\\Toni\yolov5\\data\\images\\screenshot_{screenshot_number}.png') == True:
+        while os.path.exists(save_image_path) == True:
             screenshot_number += 1
         # Create a filename with the unique number
         filename = f'screenshot_{screenshot_number}.png'
