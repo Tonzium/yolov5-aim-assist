@@ -11,7 +11,7 @@ import time
 import autoit
 
 ####Setup environment (make sure you have all necessary libraries installed)
-yolov5_repo_path = r'C:\Users\Toni\yolov5'
+yolov5_repo_path = r'C:\Users\Username\yolov5'
 
 #### Load Yolov5 model OR load 'custom' model
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
@@ -21,7 +21,7 @@ model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
 screenshot_number = 0
 pyautogui.PAUSE = 0.01
 
-save_image_path = f'C:\\Users\\Toni\yolov5\\data\\images\\screenshot_{screenshot_number}.png'
+save_image_path = f'C:\\Users\\Username\yolov5\\data\\images\\screenshot_{screenshot_number}.png'
 
 while True:
 
